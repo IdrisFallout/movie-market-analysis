@@ -1,73 +1,51 @@
 # Movie Market Analysis
 
 ## Overview
-
-The "Movie Market Analysis" project aims to explore and analyze trends in the movie industry using various datasets. The goal is to provide actionable insights and recommendations for a new movie studio to help them decide on the types of films to produce based on current market trends and box office performance.
+The **Movie Market Analysis** project aims to explore trends and factors affecting the profitability of movies. By analyzing data from multiple sources such as Box Office Mojo, IMDB, Rotten Tomatoes, TheMovieDB, and The Numbers, the project seeks to uncover insights that can guide film production decisions for maximizing profitability.
 
 ## Business Understanding
+To guide the analysis, the following key business questions were addressed:
 
-### Stakeholder and Key Business Questions
+1. **What types of films are currently performing well at the box office?**
+   - Analyzed box office performance across different genres to identify which genres generate the highest revenue.
 
-The primary stakeholder is the head of a new movie studio. The key questions to address are:
-- What types of films are currently performing well at the box office?
-- Which genres, budgets, or other factors are associated with higher box office revenue?
-- What actionable strategies can be derived from the analysis to guide the studio’s film production decisions?
+2. **Which factors are associated with higher box office revenue?**
+   - Investigated various factors such as budget, release date, and runtime to determine their impact on box office success.
+
+3. **What actionable strategies can be derived from the analysis to guide the studio’s film production decisions?**
+   - Provided concrete recommendations based on data analysis to help studios make informed decisions about the types of films to produce.
 
 ## Data Understanding and Analysis
+The analysis utilized the following datasets:
 
-### Source of Data
+- **Box Office Mojo**: Box office gross figures.
+- **IMDB**: Movie metadata, including genres and ratings.
+- **Rotten Tomatoes**: Movie info and reviews.
+- **TheMovieDB**: Movie details and popularity metrics.
+- **The Numbers**: Production budgets and gross revenues.
 
-This project utilizes datasets from the following sources:
-- **Box Office Mojo**: Data on box office gross.
-- **IMDB**: Movie metadata, including genres, ratings, and more (stored in a SQLite database).
-- **Rotten Tomatoes**: Movie reviews and ratings.
-- **TheMovieDB**: Additional movie details and metadata.
-- **The Numbers**: Box office revenue data.
+### Key Findings
 
-### Description of Data
+1. **Most Profitable Genres**: 
+   - **Visualization 1**: Average Worldwide Gross by Genre
+     ![Average Worldwide Gross by Genre](images/average_worldwide_gross_by_genre.png)
 
-- **IMDB Data (im.db.zip)**: Contains tables such as `movie_basics` and `movie_ratings`.
-- **Box Office Mojo Data (bom.movie_gross.csv.gz)**: Compressed CSV file with movie gross information.
+   Animation and Sci-Fi showed the highest average worldwide gross, while Drama and Comedy had the highest profitability margins.
 
-## Data Preparation
+2. **Correlation with Revenue**: 
+   - **Visualization 2**: Correlation between Production Budget and Worldwide Gross
+     ![Correlation between Production Budget and Worldwide Gross](images/correlation_budget_worldwide_gross.png)
 
-- **Data Cleaning**: Handled missing values, corrected errors, and standardized data formats.
-- **Data Integration**: Merged data from different sources to create a comprehensive dataset for analysis.
+   A strong positive correlation (0.78) was found between production budgets and worldwide gross revenues.
 
-## Data Analysis
+3. **Profitability Influences**: 
+   - **Visualization 3**: Profitability by Genre
+     ![Profitability by Genre](images/profitability_by_genre.png)
 
-- **Exploratory Data Analysis (EDA)**: Performed initial analysis to uncover trends and patterns in the data.
-- **Visualizations**: Created visualizations to highlight key insights and trends.
-
-## Visualizations
-
-### Visualization 1
-- Description: [Brief description of the first visualization and its relevance to your findings]
-- Image: ![Visualization 1](path/to/visualization1.png)
-
-### Visualization 2
-- Description: [Brief description of the second visualization and its relevance to your findings]
-- Image: ![Visualization 2](path/to/visualization2.png)
-
-### Visualization 3
-- Description: [Brief description of the third visualization and its relevance to your findings]
-- Image: ![Visualization 3](path/to/visualization3.png)
-
-## Recommendations
-
-Based on the analysis, the following recommendations are made for the new movie studio:
-1. **Recommendation 1**: [Description of the first recommendation]
-2. **Recommendation 2**: [Description of the second recommendation]
-3. **Recommendation 3**: [Description of the third recommendation]
+   Higher production budgets and certain genres (Drama and Comedy) significantly impact profitability. Films in higher revenue quartiles generally show better profitability.
 
 ## Conclusion
-
-This project provides insights into the movie market that can guide the new movie studio in making informed production decisions. By understanding current trends and successful film characteristics, the studio can better align its production strategy with market demands.
-
-## Next Steps
-
-- **Further Analysis**: [Any additional analysis that could be done]
-- **Implementation**: [Suggestions for implementing the recommendations]
+Based on the analysis, studios are recommended to focus on high-budget films and target genres that exhibit strong profitability. Investing in genres like Animation and Sci-Fi can lead to higher worldwide grosses, while Drama and Comedy offer favorable profitability margins. Additionally, prioritizing high-revenue potential projects is suggested for maximizing profitability.
 
 ## Thank You
 
@@ -75,4 +53,3 @@ For any questions or further information, please contact:
 - **Name**: [Samwel Waithaka](https://github.com/IdrisFallout)
 - **LinkedIn**: [LinkedIn](https://www.linkedin.com/in/idrisfallout)
 - **Website**: [Website](https://waithakasam.com)
-
